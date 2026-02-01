@@ -12,126 +12,118 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             padding: 20px;
         }
         
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: white;
+            background: white;
             padding: 40px;
             border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         }
         
         h1 {
-            color: #2c3e50;
-            font-size: 28px;
+            color: #2d3748;
+            font-size: 2.5em;
             margin-bottom: 10px;
-            border-bottom: 3px solid #3498db;
+            border-bottom: 3px solid #667eea;
             padding-bottom: 10px;
         }
         
         .last-updated {
-            color: #7f8c8d;
-            font-size: 14px;
+            color: #718096;
+            font-size: 0.9em;
             margin-bottom: 30px;
             font-style: italic;
         }
         
         h2 {
-            color: #34495e;
-            font-size: 20px;
-            margin-top: 30px;
+            color: #4a5568;
+            font-size: 1.8em;
+            margin-top: 40px;
             margin-bottom: 15px;
-            padding-left: 10px;
-            border-left: 4px solid #3498db;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2::before {
+            content: "→";
+            color: #667eea;
+            font-weight: bold;
         }
         
         p {
             margin-bottom: 15px;
-            text-align: justify;
+            color: #4a5568;
         }
         
         ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
+            margin-left: 30px;
+            margin-bottom: 20px;
         }
         
         li {
             margin-bottom: 10px;
-            line-height: 1.7;
-        }
-        
-        ul ul {
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-        
-        strong {
-            color: #2c3e50;
-        }
-        
-        .contact-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        
-        .contact-info p {
-            margin-bottom: 10px;
-            text-align: left;
-        }
-        
-        .contact-info strong {
-            color: #fff;
-        }
-        
-        .footer {
-            margin-top: 40px;
-            padding-top: 25px;
-            border-top: 2px solid #ecf0f1;
-            font-style: italic;
-            color: #7f8c8d;
-            text-align: center;
-            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.8;
         }
         
         .highlight-box {
-            background-color: #e8f4f8;
-            border-left: 4px solid #3498db;
-            padding: 15px;
+            background: #edf2f7;
+            border-left: 4px solid #667eea;
+            padding: 20px;
             margin: 20px 0;
-            border-radius: 5px;
+            border-radius: 4px;
         }
         
-        a {
-            color: #3498db;
-            text-decoration: none;
+        .contact-box {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
         }
         
-        a:hover {
-            text-decoration: underline;
+        .contact-box h3 {
+            color: #2d3748;
+            margin-bottom: 15px;
         }
         
-        @media (max-width: 768px) {
+        .contact-info {
+            margin-left: 20px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        strong {
+            color: #2d3748;
+        }
+        
+        @media (max-width: 600px) {
             .container {
                 padding: 20px;
             }
             
             h1 {
-                font-size: 24px;
+                font-size: 2em;
             }
             
             h2 {
-                font-size: 18px;
+                font-size: 1.5em;
             }
         }
     </style>
@@ -139,7 +131,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for Mausam Nepal</h1>
-        <p class="last-updated"><strong>Last Updated:</strong> January 27, 2026</p>
+        <p class="last-updated">Last Updated: January 27, 2026</p>
         
         <h2>Introduction</h2>
         <p>Mausam Nepal is a weather information application that provides real-time weather data and forecasts for locations within Nepal. This privacy policy explains how we handle information when you use our app.</p>
@@ -147,83 +139,96 @@
         <h2>Data Sources</h2>
         <p>Mausam Nepal collects and displays weather information from the following sources:</p>
         <ul>
-            <li><strong>Nepal Department of Hydrology and Meteorology (DHM)</strong> - Primary data source for weather information, forecasts, and meteorological bulletins</li>
-            <li><strong>OpenWeatherMap</strong> - Supplementary weather data service</li>
+            <li><strong>Nepal Department of Hydrology and Meteorology (DHM)</strong> - Primary data source</li>
+            <li><strong>Open-Meteo</strong> - Supplementary weather data service</li>
         </ul>
         
         <h2>Language and Content</h2>
         <ul>
-            <li>The app supports both <strong>English and Nepali</strong> languages</li>
-            <li>Some features are available <strong>only in Nepali</strong> due to direct extraction of data from government websites in Nepali language</li>
-            <li>We display the data as provided by the source websites without translation to maintain accuracy</li>
+            <li>Supports English and Nepali languages</li>
+            <li>Some features only available in Nepali due to direct government data extraction</li>
+            <li>Data displayed as provided by sources</li>
         </ul>
         
         <h2>Location Services</h2>
         <ul>
-            <li>The app is designed to work <strong>exclusively for locations within Nepal</strong></li>
-            <li>Even if you are outside Nepal, you will need to select a Nepali location to access weather information</li>
-            <li>Location data is used only to provide relevant weather information and is <strong>not stored or shared</strong></li>
+            <li>Works exclusively for locations within Nepal</li>
+            <li>Outside Nepal? Must select a Nepali location</li>
+            <li>Location data only used to show relevant weather, not stored or shared</li>
         </ul>
         
         <h2>Information We Collect</h2>
         <div class="highlight-box">
-            <p><strong>Mausam Nepal does not collect, store, or share any personal information about its users.</strong></p>
+            <p><strong>Mausam Nepal does not collect, store, or share any personal information.</strong> We only:</p>
+            <ul>
+                <li>Access your location (with your permission)</li>
+                <li>Display publicly available weather data</li>
+            </ul>
         </div>
-        <p>We only:</p>
-        <ul>
-            <li>Access your location (with your permission) to show weather for your area</li>
-            <li>Display publicly available weather data from government and third-party sources</li>
-        </ul>
         
         <h2>Features Provided</h2>
-        <p>The app provides the following weather information:</p>
         <ul>
-            <li>Current weather conditions for your location</li>
+            <li>Current weather conditions</li>
             <li>3-hour forecast</li>
             <li>3-day forecast</li>
             <li>Major cities forecast</li>
-            <li>Latest bulletins including:
-                <ul>
-                    <li>Cold wave monitoring</li>
-                    <li>Monsoon monitoring</li>
-                    <li>High altitude forecast</li>
-                    <li>24-hour forecast bulletin</li>
-                    <li>3-day forecast bulletin</li>
-                    <li>Weekly weather outlook</li>
-                </ul>
-            </li>
+            <li>Latest bulletins: Cold wave monitoring, Monsoon monitoring, High altitude forecast, 24-hour and 3-day forecast bulletins, Weekly outlook</li>
+        </ul>
+        
+        <h2>Weather Stations and Their Features</h2>
+        <p>Mausam Nepal uses weather station data from the Nepal Department of Hydrology and Meteorology (DHM). Station-related features include:</p>
+        <ul>
+            <li><strong>Station data source:</strong> Observations from DHM automatic weather stations across Nepal (via official DHM API)</li>
+            <li><strong>Nearby stations:</strong> Shows the nearest station and regional comparison (next nearest stations) based on your or selected location</li>
+            <li><strong>Station explorer:</strong> Map and list of all DHM stations; browse by location and see station names, coordinates, and current observations (e.g. temperature)</li>
+            <li><strong>Location use:</strong> Your device location (or chosen location) is used only to rank and show nearest stations; not stored or shared with third parties</li>
+            <li><strong>Caching:</strong> Station lists and nearby results may be cached temporarily on your device for faster loading; no personal data is stored</li>
         </ul>
         
         <h2>Visual Experience</h2>
         <ul>
-            <li>App themes automatically change based on current weather conditions (sunny, rainy, cloudy, night, etc.)</li>
-            <li>This personalization is done <strong>locally on your device</strong> and no data is collected</li>
+            <li>App themes automatically change based on weather conditions</li>
+            <li>Done locally on your device, no data collected</li>
         </ul>
         
         <h2>Third-Party Services</h2>
-        <p>We use OpenWeatherMap API to supplement weather data. Please refer to <a href="https://openweathermap.org/privacy-policy" target="_blank">OpenWeatherMap's Privacy Policy</a> for information about their data practices.</p>
+        <p>We use <strong>Open-Meteo API</strong> to supplement weather data. Please refer to their Privacy Policy for information about their data practices.</p>
         
         <h2>Data Security</h2>
         <p>Since we do not collect or store personal information, there is no personal data at risk. All weather data displayed is publicly available information from government sources.</p>
         
-        <h2>Contact Information</h2>
-        <p>For questions about weather data or this app, you may contact the Department of Hydrology and Meteorology:</p>
-        <div class="contact-info">
-            <p><strong>Department of Hydrology and Meteorology</strong><br>
-            Government of Nepal<br>
-            Ministry of Energy, Water Resources and Irrigation</p>
-            <p><strong>Email:</strong> <a href="mailto:dg@dhm.gov.np" style="color: white; text-decoration: underline;">dg@dhm.gov.np</a></p>
-            <p><strong>Phone:</strong> +977-1-5319052, 5358224, 5358276, 5319007</p>
+        <h2>Disclaimer</h2>
+        <div class="highlight-box">
+            <p><strong>Mausam Nepal is a non-commercial, independent application created solely to make publicly available weather information more accessible to the people of Nepal.</strong></p>
+            <p>This app:</p>
+            <ul>
+                <li>Does not monetize or profit from weather data</li>
+                <li>Simply aggregates and displays information already published by government sources</li>
+                <li>Has no commercial intent or advertising</li>
+                <li>Is developed as a public service for easier access to official weather information</li>
+            </ul>
+            <p>All weather data displayed is the same information provided by the Department of Hydrology and Meteorology (DHM) and other official sources, presented in a user-friendly mobile format.</p>
+        </div>
+        
+        <div class="contact-box">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <p><strong>Department of Hydrology and Meteorology</strong><br>
+                Government of Nepal<br>
+                Ministry of Energy, Water Resources and Irrigation</p>
+                <p><strong>Email:</strong> dg@dhm.gov.np<br>
+                <strong>Phone:</strong> +977-1-5319052, 5358224, 5358276, 5319007</p>
+            </div>
         </div>
         
         <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be reflected with an updated "Last Updated" date.</p>
+        <p>We may update this privacy policy from time to time. Any changes will be reflected with an updated "Last Updated" date at the top of this page.</p>
         
         <h2>Your Consent</h2>
         <p>By using Mausam Nepal, you consent to this privacy policy.</p>
         
         <div class="footer">
-            <p>Mausam Nepal is an independent application that aggregates publicly available weather information from government sources to make it easily accessible to users in Nepal.</p>
+            <p><strong>Mausam Nepal is a completely free, non-commercial application with absolutely no intention of personal profit or monetization of any kind. It is created solely as a public service to provide easy access to weather information from government sources for the people of Nepal.</strong></p>
         </div>
     </div>
 </body>
